@@ -1,63 +1,43 @@
-*{
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: #D5F5E3;
-    font-family: sans-serif;
-    outline: none;
-}
+<!--Level 2 - Task 2 - Todo Web App
+//Oasis Infobyte Web Development and Designing Internship
+//Author - Deepak Marrapu
+-->
 
-.container{
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Todo Web App</title>
+	<link rel="stylesheet" href="style.css" />
+</head>
 
-.calculator{
-    background-color: #808B96;
-    padding: 15px;
-    border-radius: 30px;
-    box-shadow: inset 5px 5px 12px #273746,
-                      5px 5px 12px rgba(0,0,0,.16);
-    display: grid;
-    grid-template-columns: repeat(6,68px);
-}
+<body>
+	<header>
+		<h1>Todo Web App</h1>
+		<form id="task3">
+			<input 
+				type="text" 
+				name="IP" 
+				id="IP" 
+				placeholder="What to do?" />
+			<input 
+				type="submit"
+				id="submit" 
+				value="Add task" />
+		</form>
+	</header>
 
-input{
-    grid-column: span 6;
-    height: 70px;
-    width: 380px;
-    background-color: #CACFD2;
-    box-shadow: inset -5px -5px 12px #273746,
-                      5px 5px 12px rgba(0,0,0,.16);
-    border: none;
-    border-radius: 15px;
-    color: rgb(70, 70, 70);
-    font-size: 50px;
-    text-align: end;
-    margin: auto;
-    margin-top: 40px;
-    margin-bottom: 30px;
-    padding: 20px;
-}
+	<main>
+		<section class="list">
+			<h2>Tasks</h2>
+			<div id="tasks">
+				
+			</div>
+		</section>
+	</main>
 
-button{
-    height: 48px;
-    width: 48px;
-    background-color: #5D6D7E;
-    box-shadow: inset -5px -5px 12px #273746,
-                       5px 5px 12px rgba(0,0,0,.16);
-    border: none;
-    border-radius: 15px;
-    margin: 8px;
-    font-size: 16px;
-}
-
-.equal{
-    width: px;
-    border-radius: 15px;
-    box-shadow: inset -5px -5px 12px #273746,
-                       5px 5px 12px rgba(0,0,0,.16);
-    
-}
+	<script src="index.js"></script>
+</body>
+</html>
