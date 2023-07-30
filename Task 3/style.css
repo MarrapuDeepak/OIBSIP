@@ -1,9 +1,9 @@
 :root {
-	--darkest: #282e3a;
-	--darker: #5d6064;
-	--grey: #afb4be;
-	--blue: #005bef;
-	--light : rgb(226, 218, 218);
+	--heading: #17202A;
+	--list: #AEB6BF;
+	--abc: #EAFAF1;
+	--green: #2ECC71;
+	--item : #D5DBDB;
 }
 
 * {
@@ -17,7 +17,7 @@ body {
 	flex-direction: column;
 	min-height: 100vh;
 	color: #000;
-	background-color: var(--grey);
+	background-color: var(--abc);
 }
 
 header {
@@ -30,11 +30,11 @@ header {
 header h1{ 
 	font-size: 2.5rem;
 	font-weight: 300;
-	color: var(--darkest);
+	color: var(--heading);
 	margin-bottom: 1rem;
 }
 
-#task-form {
+#task3 {
 	display: flex;
 }
 
@@ -45,36 +45,36 @@ input, button {
 	background: none;
 }
 
-#task-input {
+#IP {
 	flex: 1 1 0%;
-	background-color: var(--light);
+	background-color: var(--item);
 	padding: 1rem;
 	border-radius: 1rem;
 	margin-right: 1rem;
-	color: var(--darkest);
+	color: var(--heading);
 	font-size: 1.25rem;
 }
 
-#task-input::placeholder {
-	color: var(--darkest);
+#IP::placeholder {
+	color: var(--heading);
 }
 
-#task-submit {
-	color: var(--blue);
+#submit {
+	color: var(--green);
 	font-size: 1.25rem;
 	font-weight: 700;
-	background-color: var(--blue);
+	background-color: var(--green);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	cursor: pointer;
 	transition: 0.4s;
 }
 
-#task-submit:hover {
+#submit:hover {
 	opacity: 0.8;
 }
 
-#task-submit:active {
+#submit:active {
 	opacity: 0.6;
 }
 
@@ -85,21 +85,21 @@ main {
 	margin: 0 auto;
 }
 
-.task-list {
+.list {
 	padding: 1rem;
 }
 
-.task-list h2 {
+.list h2 {
 	font-size: 1.5rem;
 	fzont-weight: 300;
-	color: var(--darkest);
+	color: var(--heading);
 	margin-bottom: 1rem;
 }
 
 #tasks .task {
 	display: flex;
 	justify-content: space-between;
-	background-color: var(--darker);
+	background-color: var(--list);
 	padding: 2rem;
 	border-radius: 1rem;
 	margin-bottom: 1rem;
@@ -110,7 +110,7 @@ main {
 }
 
 .task .content .text {
-	color: var(--light);
+	color: var(--heading);
 	font-size: 1.125rem;
 	width: 100%;
 	display: block;
@@ -118,7 +118,7 @@ main {
 }
 
 .task .content .text:not(:read-only) {
-	color: var(--blue);
+	color: var(--green);
 }
 
 .task .actions {
@@ -144,11 +144,11 @@ main {
 }
 
 .task .actions .edit {
-	background-color: var(--blue);
+	background-color: var(--green);
 	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+	color:#2ECC71;
 }
 
 .task .actions .delete {
-	color: crimson;
+	color: #E74C3C;
 }
